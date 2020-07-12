@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- IBM PLEX SANS FONT STLYESHEET -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Derry Chen</title>
+  </head>
+  <body>
+    <!-- MAIN BODY -->
+    <div class="container">
+      <!-- NAVBAR -->
+      <nav id="navBar">
+        <ul>
+          <li><a id="about" href="#aboutModal">about</a></li>
+          <li><a id="work" href="#workModal">work</a></li>
+          <li><a id="contact" href="#contactModal">contact</a></li>
+          <li><a id="blog" href="https://medium.com/@dc784" target="_blank">blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="landingShape" id="shape1"></div>
+      <div class="landingShape" id="shape2">
+        <h1>derry chen</h1>
+      </div>
+      <div class="landingShape" id="shape3"></div>
+    </div>
+
+    <!-- ABOUT MODAL -->
+    <div class="modalClass" id="aboutModal">
+      <div class="close-aboutModal">
+        <img class="backArrow" src="assets/up-arrow-white.svg" alt="white-back-arrow">
+      </div>
+      <div id="aboutContainer">
+        <img src="assets/selfie.jpg" alt="me">
+        <p>hi! my name is du (derry) chen and i'm currently a strategy consultant at IBM. <br><br>
+        i'm interested in: <br><br>
+        - digital <span>strategy</span> <br><br>
+        - <span>emerging</span> tech <br><br>
+        - business <span>analytics</span></p>
+      </div>
+    </div>
+
+    <!-- WORK MODAL -->
+    <div class="modalClass" id="workModal">
+      <div class="close-workModal">
+        <img class="backArrow" src="assets/up-arrow-navy.svg" alt="blue-back-arrow">
+      </div>
+      <div id="workContainer">
+        <div class="workDiv">
+          <a href="https://derrychen.com/" target="_blank"><img src="assets/photography.jpg" alt="photo website"></a>
+          <h3>photography website</h3>
+        </div>
+        <div class="workDiv">
+          <a href="https://en.wikipedia.org/wiki/Idiot" target="_blank"><img src="assets/project.jpg" alt="unknown project"></a>
+          <h3>honestly idk rn</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT MODAL -->
+    <div class="modalClass" id="contactModal">
+      <div class="close-contactModal">
+        <img class="backArrow" src="assets/up-arrow-navy.svg" alt="blue-back-arrow">
+      </div>
+
+      <div id="formContainer">
+        <div id="iconSquare">
+          <img src="assets/paper-plane.svg" alt="papar_plane">
+        </div>
+        <form action="mailto:dc784@cornell.edu@?subject=website%20email" method="post" enctype="text/plain">
+          <label for="name">name</label><br>
+          <input class="formControl" type="text" id="name" name="name"><br>
+          <label for="email">email</label><br>
+          <input class="formControl" type="email" id="email" name="email"><br>
+          <label for="message">message</label><br>
+          <textarea class="formControl" id="message" name="message" rows="3"></textarea><br>
+          <input type="submit" value="send">
+        </form>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
