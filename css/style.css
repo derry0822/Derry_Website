@@ -481,3 +481,82 @@ html, body {
     margin-left: 0;
   }
 }
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  /* LANDING PAGE */
+  #shape2 h1 {
+    font-size: 70px;
+    max-width: 200px;
+    margin: 0;
+    padding-top: 0;
+    padding-left: 20px;
+  }
+
+  /* ABOUT PAGE */
+  #aboutContainer {
+    width: 80%;
+    height: 480px;
+    margin-top: 40%;
+    margin-bottom: 20%;
+    display: block;
+  }
+
+  #aboutContainer img {
+    position: relative;
+    bottom: 170px;
+    width: 270px;
+    margin-bottom: -100px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  #aboutContainer p {
+    position: relative;
+    font-size: 18px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-left: 0;
+    bottom: 140px;
+  }
+
+  /* WORK PAGE */
+  .workDiv:first-of-type {
+    margin-top: 40%;
+  }
+
+  /* CONTACT PAGE */
+  #formContainer {
+    margin-top: 30%;
+    margin-bottom: 20%;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+  /* LANDING PAGE */
+  #shape2 h1 {
+    font-size: 90px;
+    max-width: 200px;
+    margin: 0;
+    padding-left: 30px;
+  }
+
+  /* ABOUT PAGE */
+  #aboutContainer {
+    margin-top: 40%;
+    margin-bottom: 20%;
+  }
+
+  /* WORK PAGE */
+  .workDiv:first-of-type {
+    margin-top: 40%;
+  }
+
+  /* CONTACT PAGE */
+  #formContainer {
+    margin-top: 30%;
+    margin-bottom: 20%;
+  }
+}
