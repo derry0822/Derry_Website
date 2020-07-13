@@ -18,9 +18,15 @@ function main() {
     });
 
   // Landing Page Animations
-  $("#shape1").animate({left: '70%'}, 2000);
-  $("#shape2").animate({left: '30%'}, 1000);
-  $("#shape3").animate({left: '50%'}, 3000);
+  // $("#shape1").animate({left: '70%'}, 2000);
+  // $("#shape2").animate({left: '30%'}, 1000);
+  // $("#shape3").animate({left: '50%'}, 3000);
+
+  //Hamburger Menu toggle
+  $('.menuToggle').click(function() {
+    $('.menuToggle').toggleClass("menuToggle-on");
+    $('.navBar').toggleClass("navBar-on")
+  });
 };
 
 $(document).ready(main());
