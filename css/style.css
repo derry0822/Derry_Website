@@ -4,48 +4,49 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #001972;
 }
 
 /* UNIVERSAL */
 .navBar ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100px;
 }
 
 .navBar li a {
   display: block;
-  color: #000;
+  color: #FFF;
   padding: 6px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .navBar li a:hover {
-  color: #05269D;
+  color: #b2e3ff;
   transition: color 0.2s linear;
 }
 
-.navBar-on ul {
+/* .navBar-on ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100px;
 }
 
 .navBar-on li a {
   display: block;
-  color: #000;
+  color: #FFF;
   padding: 6px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .navBar-on li a:hover {
-  color: #05269D;
+  color: #b2e3ff;
   transition: color 0.2s linear;
-}
+} */
 
 .container {
   overflow: hidden;
@@ -98,7 +99,7 @@ html, body {
 }
 
 /* HAMBURGER STUFF */
-.menuToggle {
+/* .menuToggle {
   display: none;
 }
 
@@ -142,10 +143,10 @@ html, body {
 
 .menuToggle-on span:nth-last-child(1) {
   transform: rotate(-45deg) translate(-2px, -2px);
-}
+} */
 
 /* LANDING PAGE */
-.landingShape {
+/* .landingShape {
   position: fixed;
   height: 35%;
   border-radius: 30px;
@@ -181,6 +182,70 @@ html, body {
   margin: 0;
   padding-top: 15px;
   padding-left: 30px;
+} */
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.container h1 {
+  color: #FFF;
+  font-size: 82px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  text-align: center;
+  margin-top: 15%;
+}
+
+nav {
+  text-align: center;
+}
+
+.bigCircle {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  left: -100px;
+  top: -100px;
+  background-color: #001972;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+}
+
+.littleCircle {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  height: 100px;
+  width: 100px;
+  background-color: #b2e3ff;
+  border-radius: 50%;
+  -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
+  -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
+  animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+,
+                                          IE 10+, Safari 5 */
+}
+
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(200px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(200px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(200px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(200px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
 }
 
 /* ABOUT PAGE */
@@ -334,7 +399,7 @@ html, body {
 
 @media only screen and (max-width: 600px) {
   /* LANDING PAGE */
-  #shape2 h1 {
+  /* #shape2 h1 {
     color: #FFF;
     font-size: 55px;
     font-weight: 400;
@@ -358,9 +423,9 @@ html, body {
   #shape3 {
     width: 60%;
     z-index: -102;
-  }
+  } */
 
-  .navBar {
+  /* .navBar {
     position: absolute;
     width: 100%;
     height: 220px;
@@ -390,14 +455,29 @@ html, body {
 
   .navBar-on {
     transform: none;
-  }
+  } */
 
   /* HAMBURGER STUFF */
-  .menuToggle {
+  /* .menuToggle {
     display: block;
     position: absolute;
     top: 20px;
     left: 20px;
+  } */
+  .bigCircle {
+    left: 50%;
+    margin-left: -200px;
+    top: -250px;
+  }
+
+  .littleCircle {
+    left: 50%;
+    margin-left: -50px;
+    top: -100px;
+  }
+
+  .container h1 {
+    margin-top: 55%;
   }
 
   /* ABOUT PAGE */
@@ -485,12 +565,28 @@ html, body {
 
 @media (min-width: 601px) and (max-width: 1000px) {
   /* LANDING PAGE */
-  #shape2 h1 {
+  /* #shape2 h1 {
     font-size: 70px;
     max-width: 200px;
     margin: 0;
     padding-top: 0;
     padding-left: 20px;
+  } */
+
+  .bigCircle {
+    left: 50%;
+    margin-left: -200px;
+    top: -250px;
+  }
+
+  .littleCircle {
+    left: 50%;
+    margin-left: -50px;
+    top: -100px;
+  }
+
+  .container h1 {
+    margin-top: 30%;
   }
 
   /* ABOUT PAGE */
@@ -537,11 +633,15 @@ html, body {
 
 @media (min-width: 1001px) and (max-width: 1200px) {
   /* LANDING PAGE */
-  #shape2 h1 {
+  /* #shape2 h1 {
     font-size: 90px;
     max-width: 200px;
     margin: 0;
     padding-left: 30px;
+  } */
+
+  .container h1 {
+    margin-top: 30%;
   }
 
   /* ABOUT PAGE */
